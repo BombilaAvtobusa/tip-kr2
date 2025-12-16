@@ -1,0 +1,32 @@
+<!-- 
+Войчук Глеб Владиславович ЭФБО-17-24 
+Задание №2 Вариант 5
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавление параграфа</title>
+</head>
+
+<body>
+  <div id="container">
+    <p>Первый абзац</p>
+  </div>
+
+  <script>
+    function addParagraph(containerId, text) {
+      let container = document.getElementById(containerId);
+      let p = document.createElement('p');
+      p.textContent = text;
+      container.appendChild(p);
+    }
+
+    addParagraph("container", 'Новый абзац!');
+  </script>
+</body>
+
+</html>

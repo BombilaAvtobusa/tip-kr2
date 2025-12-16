@@ -1,0 +1,27 @@
+<!-- 
+Войчук Глеб Владиславович ЭФБО-17-24 
+Задание №3 Вариант 2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <title>Скрытие/Показ</title>
+</head>
+
+<body>
+    <div id="info">Этот блок можно скрыть или показать</div>
+    <button id="toggleBtn">Скрыть/Показать</button>
+    <script>
+        document.getElementById('toggleBtn').onclick = function () {
+            document.getElementById('info').classList.toggle('hidden');
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!-- 
+Войчук Глеб Владиславович ЭФБО-17-24 
+Задание №4 Вариант 34
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="elem34" src="img.jpg">
+
+    <script>
+        let img = document.getElementById('elem34');
+        img.style.objectFit = "cover";
+
+        if (img.offsetWidth !== img.naturalWidth) {
+            img.style.width = img.naturalWidth + 'px';
+        } 
+    </script>
+</body>
+
+</html>

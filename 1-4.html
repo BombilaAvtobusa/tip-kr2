@@ -1,0 +1,38 @@
+<!-- 
+Войчук Глеб Владиславович ЭФБО-17-24 
+Задание №1 Вариант 4
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список пользователей</title>
+</head>
+
+<body>
+    <h1>Список пользователей</h1>
+    <ul>
+        <li>Анна</li>
+        <li>Борис</li>
+        <li>Виктор</li>
+    </ul>
+    <input type="text" placeholder="Введите имя">
+    <button>Добавить пользователя</button>
+
+    <script>
+        document.querySelector('button').onclick = function () {
+            let input = document.querySelector('input');
+            if (input.value.trim() !== '') {
+                let newLi = document.createElement('li');
+                newLi.textContent = input.value.trim();
+                document.querySelector('ul').appendChild(newLi);
+                input.value = '';
+            }
+        };
+    </script>
+</body>
+
+</html>
